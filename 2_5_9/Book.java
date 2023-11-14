@@ -23,6 +23,6 @@ public class Book {
      * Decreases book price by the given amount byPercent
      */
     public void giveDiscount(double byPercent) {
-        price *= (100 - byPercent);
+        price *= (100 - byPercent)/100;
     }
 }
