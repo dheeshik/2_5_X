@@ -1,6 +1,3 @@
-/*
- * Activity 2.5.6
- */
 public class HikeRunner
 {
   public static void main(String[] args)

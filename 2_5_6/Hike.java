@@ -1,7 +1,3 @@
-/*
- * Activity 2.5.6
- */
-
 public class Hike
 {
   private String name;
