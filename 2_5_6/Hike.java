@@ -1,5 +1,4 @@
-public class Hike
-{
+public class Hike {
   private String name;
   private double miles;
   private int elevation;
@@ -7,12 +6,11 @@ public class Hike
   /**
    * A constructor for the Hike class
    *
-   * @param name The name of this hike
-   * @param miles The length of this hike in miles
+   * @param name      The name of this hike
+   * @param miles     The length of this hike in miles
    * @param elevation The elevation gain of the hike in feet
    */
-  public Hike(String name, double miles, int elevation)
-  {
+  public Hike(String name, double miles, int elevation) {
     this.name = name;
     this.miles = miles;
     this.elevation = elevation;
@@ -23,8 +21,7 @@ public class Hike
    * 
    * @return the name of the hike
    */
-  public String getName()
-  {
+  public String getName() {
     return name;
   }
 
@@ -33,8 +30,7 @@ public class Hike
    * 
    * @return the length of the hike in miles
    */
-  public double getMiles()
-  {
+  public double getMiles() {
     return miles;
   }
 
@@ -43,37 +39,34 @@ public class Hike
    * 
    * @return the elevation gain in feet
    */
-  public double getElevation()
-  {
+  public double getElevation() {
     return elevation;
   }
 
-   /**
+  /**
    * Determines if the current hike is longer than another hike
    * 
    * @param h The hike to use in the comparison
    * @return true if the current hike is longer
-   */ 
-  public boolean isLongerThan(Hike h)
-  {
+   */
+  public boolean isLongerThan(Hike h) {
     if (miles > h.getMiles())
       return true;
     else
       return false;
   }
-  
+
   /**
    * Determines if the current hike has more elevation gain than another
    * 
    * @param h The hike to use in the comparison
    * @return true if the current hike has more elevation gain
    */
-  public boolean isHigherThan(Hike h)
-  {
+  public boolean isHigherThan(Hike h) {
     if (elevation > h.getElevation())
-     return true;
-   else
-     return false;
+      return true;
+    else
+      return false;
   }
 
   /**
@@ -81,9 +74,8 @@ public class Hike
    * 
    * @return Describes the name, miles, and elevation of the hike
    */
-  public String toString() 
-  {
-    return name + " is " + miles + " miles and gains " + elevation + " feet."; 
+  public String toString() {
+    return name + " is " + miles + " miles and gains " + elevation + " feet.";
   }
 
 }

@@ -1,15 +1,15 @@
 /*
  * Activity 2.5.7
  *
- * A Book class for the MediaLibrary program
+ * A Movie class for the MediaLibrary program
  */
-public class Book {
+public class Movie {
   private String title;
   private String author;
   private int rating;
 
   /*** Constructor ****/
-  public Book(String t, String a) {
+  public Movie(String t, String a) {
     title = t;
     author = a;
     rating = 0;
@@ -53,7 +53,7 @@ public class Book {
     }
   }
 
-  public boolean equals(Book b) {
+  public boolean equals(Movie b) {
     return (b.author == this.author && b.title == this.title);
   }
 }
